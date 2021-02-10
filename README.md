@@ -1,6 +1,8 @@
 # Waterway-Pioneers
 Discover and share the best trails for the optimal outdoor occasions while warning others of potential hazards in this app
 
+On this app, kayakers report the routes they travel on rivers and lakes. They can trace their routes and set map markers to denote inconveniences / dangers such as fallen trees blocking the waterway, rapids, hornets nests, put-in locations, take-out locations, etc. The app helps kayakers learn from others' experience to determine if routes are navigable, find new routes, and always come prepared.
+
 ### MVP (Minimal Viable Product)
 - One grand kayak map displays  all routes and markers
 - Can filter map by different types of markers
