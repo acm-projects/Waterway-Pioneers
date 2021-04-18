@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+//import 'dart:convert';
+//import 'package:http/http.dart' as http;
+//import 'infoscreen.dart';
 
 class ActivityList extends StatelessWidget {
   @override
@@ -117,6 +120,20 @@ class _LocationInformation extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
+          /*TextButton(
+            onPressed: () => {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (context) => InfoScreen()))
+            },
+            child: Text(
+              name,
+              style: const TextStyle(
+                fontFamily: 'DM Sans',
+                fontWeight: FontWeight.bold,
+                fontSize: 15.0,
+              ),
+            ),
+          ), */
           Text(
             name,
             style: const TextStyle(
@@ -128,7 +145,9 @@ class _LocationInformation extends StatelessWidget {
           const Padding(padding: EdgeInsets.symmetric(vertical: 2.0)),
           Text(
             city,
-            style: const TextStyle(fontSize: 15.0),
+            style: const TextStyle(
+              fontSize: 15.0,
+            ),
           ),
           const Padding(padding: EdgeInsets.symmetric(vertical: 1.0)),
           Text(
@@ -195,6 +214,86 @@ class _LocationSectionState extends State<LocationSection> {
                 borderRadius: BorderRadius.all(Radius.circular(15))),
           ),
           name: 'Small Lake',
+        ),
+        CustomListItem(
+          city: 'Dallas, TX',
+          numMiles: 30,
+          thumbnail: Container(
+            decoration: const BoxDecoration(
+                color: Colors.purple,
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+          ),
+          name: 'Short Trail',
+        ),
+        CustomListItem(
+          city: 'Dallas, TX',
+          numMiles: 33,
+          thumbnail: Container(
+            decoration: const BoxDecoration(
+                color: Colors.pink,
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+          ),
+          name: 'Narrow Creek',
+        ),
+        CustomListItem(
+          city: 'Dallas, TX',
+          numMiles: 7,
+          thumbnail: Container(
+            decoration: const BoxDecoration(
+                color: Colors.blue,
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+          ),
+          name: 'Big Lake',
+        ),
+        CustomListItem(
+          city: 'Irving, TX',
+          numMiles: 14,
+          thumbnail: Container(
+            decoration: const BoxDecoration(
+                color: Colors.yellow,
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+          ),
+          name: 'Forest Trail',
+        ),
+        CustomListItem(
+          city: 'Plano, TX',
+          numMiles: 21,
+          thumbnail: Container(
+            decoration: const BoxDecoration(
+                color: Colors.green,
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+          ),
+          name: 'Lazy River',
+        ),
+        CustomListItem(
+          city: 'Plano, TX',
+          numMiles: 24,
+          thumbnail: Container(
+            decoration: const BoxDecoration(
+                color: Colors.red,
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+          ),
+          name: 'Small Lake',
+        ),
+        CustomListItem(
+          city: 'Dallas, TX',
+          numMiles: 30,
+          thumbnail: Container(
+            decoration: const BoxDecoration(
+                color: Colors.purple,
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+          ),
+          name: 'Short Trail',
+        ),
+        CustomListItem(
+          city: 'Dallas, TX',
+          numMiles: 33,
+          thumbnail: Container(
+            decoration: const BoxDecoration(
+                color: Colors.pink,
+                borderRadius: BorderRadius.all(Radius.circular(15))),
+          ),
+          name: 'Narrow Creek',
         ),
       ],
     );

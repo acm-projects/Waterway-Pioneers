@@ -15,7 +15,19 @@ class _InfoScreenState extends State<InfoScreen> {
             Column(
               children: [
                 Expanded(
-                  child: Text('test'), // add rest in later
+                  child: Container(
+                      decoration: BoxDecoration(
+                    color: Colors.green,
+                    image: DecorationImage(
+                      image: new AssetImage("assets/images/randomlake.jpg"),
+                      fit: BoxFit.cover,
+                    ),
+                    border: Border.all(
+                      color: Colors.green,
+                      width: 5,
+                    ),
+                    borderRadius: BorderRadius.circular(30),
+                  )),
                 ),
                 BottomNavigationBar(
                     showSelectedLabels: false,
